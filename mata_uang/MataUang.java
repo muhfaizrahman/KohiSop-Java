@@ -1,5 +1,5 @@
 package mata_uang;
 
-public class MataUang {
-    
+public interface MataUang {
+    public double konversiKeIDR(double nominal);
 }

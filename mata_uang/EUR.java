@@ -1,7 +1,8 @@
 package mata_uang;
 
 public class EUR implements IMataUang {
-    public double konversiKeIDR(double nominal) {
-        return nominal * 14;
+    private double kurs = 1.0 / 14.0;
+    public double konversiDariIDR(double nominal) {
+        return nominal * kurs;
     }
 }
